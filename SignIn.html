@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .SignInPage{
+      margin: auto;
+       
+        background-color: white;
+        width: 50%;
+        margin-top: 20px;
+
+        justify-content: center;
+       text-align: center; 
+       padding:30px;
+       border-radius: 20px;
+       box-shadow: 10px black; 
+
+       
+    }
+    body{
+        
+       margin: auto;
+        background-color: grey;
+    }
+    img{
+        margin: auto;
+        justify-items: center;
+    }
+    .signInBox{
+        display: flex;
+       
+        width: 90%;
+       
+        margin: auto;
+       
+        
+    }
+    .signInBox>div{
+       
+       width: 50%;
+        border-bottom: 2px solid gray;
+        margin-bottom: 10px;
+        margin: auto;
+       
+    }
+    .container{
+        justify-content: center;
+        text-align: center;
+        margin-top: 60px;
+       
+    }
+    .signinForm>label,input,button{
+        width: 60%;
+        height: 35px;
+        font-size: 15px;
+       
+       margin: 10px;
+        color: rgb(116, 113, 113);
+        border: 1px solid gray;
+
+    }
+    label,input,button:hover{
+        border: 2px solid gray;
+    }
+    
+    
+    .signinForm>label{
+        align-items: start;
+        border: none;
+
+    }
+    button:hover{
+        border: 2px solid whitesmoke;
+        border-radius: 20px;
+        background-color: rgb(40, 52, 147);
+        font-weight: bolder;
+    }
+    button{
+        background-color: rgb(142, 144, 144);
+        color: white;
+    }
+    a,p{
+  color: rgb(72, 70, 70);
+  font-weight: bold;
+
+  
+}
+
+a:hover{
+  color: rgb(39, 126, 240);
+  font-size: 20px;
+ 
+}
+</style>
+<body>
+    
+    <div class="container">
+
+   
+        <img  src="src/download.svg" alt="">
+
+    <div class="SignInPage">
+        
+      
+
+            <div class="signInBox">
+
+                <div>Join</div>
+                <p>|</p>
+                <div>Sign In</div>
+            </div>
+
+            <div class="signinForm">
+                <label  for="email"><b>EMAIL :</b></label> <br>
+                <input type="email" placeholder="Enter Your Email" required> <br>
+                <label for="email"><b>PASSWORD :</b></label> <br>
+                <input type="password" placeholder="Enter Your Password" required> <br>
+                <button>Sign In</button>
+                <p>Forget Password?</p>
+            </div>
+
+            <p>
+                New Here? <a href="SignUp.html"> Sign Up</a>
+            </p>
+    </div>
+</div>
+<p style="text-align: center; font-weight: 600;">Privacy Policy | Terms and Conditions</p>
+    
+</body>
+</html>

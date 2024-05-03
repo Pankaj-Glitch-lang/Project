@@ -1,0 +1,703 @@
+.container{
+        
+}
+
+.navBar{
+    display: flex;
+    
+    justify-content: end;
+   
+    border-top: 1px solid whitesmoke;
+  
+    
+   
+}
+.navBar>div{
+   
+    border-left: 1px solid rgb(174, 172, 172);
+   
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 0;
+    color: grey;
+   
+ 
+
+}
+.navBar2{
+    display: flex;
+
+   
+    gap: 10px;
+    justify-content: space-around;
+    background-color: rgb(44, 43, 43);
+    color: aliceblue;
+    padding: 10px;
+   
+}
+#loginButton>{
+ 
+  
+  cursor: pointer;
+}
+.myaccountpage{
+  display: none;
+  position: absolute;
+  
+  border: 1px solid #ccc;
+  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  right: 50px;
+  width: 25%;
+  
+  background-color: #f7f3f3;
+  
+  
+}
+
+.myaccountpage>.signin{
+  
+  color: grey;
+  height: 30px;
+  background-color: #ccc;
+  width: 95%;
+  padding: 2.5%;
+  margin-bottom: 10px;
+ font-weight: 800;
+ 
+ 
+}
+a, span{
+  color: rgb(72, 70, 70);
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+a:hover{
+  color: rgb(68, 68, 240);
+}
+
+
+.myaccountpage>.belowSection{
+ 
+  margin-top: 5px;
+}
+.belowSection{
+  display: flex;
+ 
+}
+.belowSection>img{
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+
+  
+}
+.belowSection>p{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.navBar2>div{
+    justify-content: space-around;
+}
+
+.navBar2>#searchBox{
+    
+    height: 40px;
+  
+    margin-top: 2px;
+    
+   
+}
+#search{
+    width:605px;
+    height: 35px;
+   margin: 2px;
+   cursor: pointer;
+   
+   border: 2px solid rgb(34, 33, 33);
+    border-radius: 30px;
+    
+}
+
+.navBar2>div>img{
+    width: 30px;
+    filter: brightness(0) invert(1);
+    
+    
+  
+   
+   
+}
+#loginButton{
+  cursor: pointer;
+}
+.navBar2>div{
+    margin-top: 10px;
+}
+
+.navBar3{
+    display: flex;
+    justify-content: start;
+    padding: 8px;
+    background-color: rgb(91, 87, 87);
+    color: white;
+    
+    
+    
+}
+.navBar3>div{
+   margin: 10px;
+   
+   font-weight: 500;
+  
+}
+.navBar3>div:hover{
+  color: azure;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navBar2>div:hover{
+  cursor: pointer;
+  color: azure;
+  font-weight: 900;
+}
+.template{
+    background-color: greenyellow;
+    text-align: center;
+    font-weight: 900;
+    padding: 3px;
+}
+.template2{
+    text-align: center;
+    font-weight: 600;
+    font-size: larger;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: orange;
+    
+}
+.template2>p{
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.categories{
+    
+    display: flex;
+    
+    margin: 38px;
+}
+.categories>div>img{
+    width: 90%;
+}
+.categories>div{
+    text-align: center;
+}
+
+.slideShow{
+    display: flex;
+    
+    transition: transform 0.5s ease-in-out;
+}
+.slide>img{
+    width: 110%;
+}
+.slideShow>div{
+    margin-left:0px;
+   
+    justify-content: center;
+}
+.slideContainer{
+    width: 80%;
+   overflow: hidden;
+   margin: 0 auto;
+   position: relative;
+    
+}
+
+.slide {
+    flex: 1 0 25%; /* Display four slides at a time */
+    min-width: 25%; /* Ensure each slide takes up 25% of the container width */
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    
+}
+.prev-btn, .next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    padding: 20px;
+    margin-left: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
+    border: none;
+    user-select: none;
+  
+  }
+
+  .next-btn {
+    right: 0px;
+   
+
+   
+  }
+
+  .prev-btn:hover, .next-btn:hover {
+    background-color: rgba(55, 53, 53, 0.8);
+   
+  }
+
+  
+
+ .shopNow{
+    
+    padding: 5px;
+   width: fit-content;
+   padding: 8px;
+    font-weight: bolder;
+    background-color: rgb(36, 34, 34);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+    border: none;
+    
+
+    
+    
+
+  }
+  .shopNow:hover{
+    cursor: pointer;
+    background-color: rgb(19, 19, 19);
+    border:2px solid black;
+    border-radius: 10px;
+  }
+  .categories2{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+   
+  }
+  .categories2>div>img{
+    width: 80%;
+  }
+
+  .categories2>div{
+    text-align: center;
+  }
+  .template3{
+    justify-content: center;
+    text-align: center;
+    background-color: greenyellow;
+    padding: 3%;
+  }
+  .template3>div{
+    border: 2px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+
+    
+  }
+  .downloadnow{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+  .asosApp{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    
+    font-weight: 900;
+  }
+  .brands{
+    display: flex;
+    margin: 4%;
+    
+  }
+  .brands>img{
+    width: 16%;
+  }
+  .trendingBrands{
+    text-align: center;
+    margin-top: 4%;
+  }
+  .socialmedia{
+    display: flex;
+    justify-content: center;
+    border-top: 1.5px solid rgb(227, 221, 221);
+   
+  
+  }
+  .socialmedia>img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+  }
+  .socialmedia>p{
+   font-size: 15px;
+   margin-left: 20px;
+   margin-right: 20px;
+  }
+  .socialmedia>div{
+    
+  }
+  footer{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: rgb(231, 229, 229);
+   
+  }
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  footer>.column{
+   
+    justify-content: start;
+   
+  }
+  .column{
+    margin:0px;
+    padding: 0;
+   
+   
+  }
+  .region{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: auto;
+  }
+  .region>img{
+    width: 15px;
+    margin: 10px;
+  }
+  .column>p{
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+  }
+  li{
+    color: rgb(88, 87, 87);
+    line-height: 30px;
+    font-size: 13px;
+   
+  }
+  .lastFooter{
+    display: flex;
+    justify-content: space-between;
+    padding:  10px;
+    background-color: rgb(210, 208, 208);
+  }
+  .lastFooter>div{
+    font-size: 12px;
+    color: rgb(68, 66, 66);
+    margin: 5px;
+    margin-left:20px;
+    margin-right: 20px;
+   
+  }
+  .lastFooter>div>span{
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .slide>p{
+    color: rgb(85, 85, 85);
+    font-weight: 400;
+  }
+  
+  .belowSection:hover{
+    color: blue;
+    font-weight: bold;
+    
+  }
+
+
+  @media all and (min-width:743px) and (max-width:1043px){
+    .navBar{
+      display: flex;
+      flex-wrap: wrap;
+      
+      justify-content: end;
+     
+      border-top: 1px solid whitesmoke;
+    
+      
+     
+  }
+
+  .navBar2{
+    display: flex;
+    flex-wrap: nowrap;
+
+   
+    gap: 10px;
+    justify-content: space-around;
+    background-color: rgb(44, 43, 43);
+    color: aliceblue;
+    padding: 10px;
+   
+}
+
+#search{
+  display: none;
+}
+
+.navBar3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 8px;
+  background-color: rgb(91, 87, 87);
+  color: white;
+  
+  
+  
+}
+
+video{
+  width: 90%;
+  margin: auto;
+  
+}
+body{
+  margin: auto;
+}
+
+.categories{
+    
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  overflow: hidden;
+  
+  margin: 38px;
+}
+
+.slide {
+  flex: 1 0 33.33%; /* Display four slides at a time */
+  min-width: 33.33%; /* Ensure each slide takes up 25% of the container width */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.categories2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  margin: 5%;
+ 
+}
+
+.socialmedia{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1.5px solid rgb(227, 221, 221);
+ 
+
+}
+.brands{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+
+  }
+
+  @media all and (min-width:343px) and (max-width:742px){
+    .navBar{
+      display: flex;
+      flex-wrap: wrap;
+      
+      justify-content: end;
+     
+      border-top: 1px solid whitesmoke;
+    
+      
+     
+  }
+
+  .navBar2{
+    display: flex;
+    flex-wrap: nowrap;
+
+   
+    gap: 10px;
+    justify-content: space-around;
+    background-color: rgb(44, 43, 43);
+    color: aliceblue;
+    padding: 10px;
+   
+}
+
+#search{
+  display: none;
+}
+
+.navBar3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding: 8px;
+  background-color: rgb(91, 87, 87);
+  color: white;
+  
+  
+  
+}
+
+video{
+  width: 80%;
+  margin: auto;
+  
+}
+body{
+  margin: auto;
+}
+
+.categories{
+    
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  
+  margin: 38px;
+}
+
+.slideShow{
+  display: flex;
+  
+  transition: transform 0.5s ease-in-out;
+}
+.slide>img{
+  width: 110%;
+}
+.slideShow>div{
+  margin-left:0px;
+ 
+  justify-content: center;
+}
+.slideContainer{
+  width: 80%;
+ overflow: hidden;
+ margin: 0 auto;
+ position: relative;
+  
+}
+
+.slide {
+  flex: 1 0 50%; /* Display four slides at a time */
+  min-width: 50%; /* Ensure each slide takes up 25% of the container width */
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  
+}
+.prev-btn, .next-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  padding: 20px;
+  margin-left: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  transition: 0.6s ease;
+  border: none;
+  user-select: none;
+
+}
+
+.next-btn {
+  right: 0px;
+ 
+
+ 
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(55, 53, 53, 0.8);
+ 
+}
+
+.categories2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5%;
+ 
+}
+
+.socialmedia{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 1.5px solid rgb(227, 221, 221);
+ 
+
+}
+.trendingBrands{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 4%;
+}
+.brands{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer{
+  display: none;
+}
+
+.myaccountpage{
+  width: auto;
+  padding: 5px;
+}
+.lastFooter{
+  justify-content: space-between;
+  font-size: 8px;
+}
+.lastFooter>div>span{
+  font-size: 10px;
+}
+
+
+
+  }
+
+
+ 
+      
+
