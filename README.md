@@ -1,7 +1,11 @@
 This is basically the clone website of the asos.com
+
 Which Includes Navbar Section 
+
 Login Sign Up Option
+
 Used corosel method to implement image slider!
+
 
 <img width="924" alt="Screenshot 2024-05-07 203854" src="https://github.com/Pankaj-Glitch-lang/Project/assets/88417360/8b4f45c8-8b80-4fab-a26a-0e567a01e3a1">
 
