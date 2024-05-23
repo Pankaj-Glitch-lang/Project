@@ -51,8 +51,10 @@
   z-index: 1;
   right: 50px;
   width: 25%;
+  border-radius: 10px;
+  font-size: larger;
   
-  background-color: #f7f3f3;
+  background-color: whitesmoke;
   
   
 }
@@ -177,7 +179,7 @@ a:hover{
     font-size: larger;
     padding: 5px;
     padding-top: 20px;
-    background-color: orange;
+    background: linear-gradient(#fd6f02,#eaf82d);
     
 }
 .template2>p{
@@ -299,7 +301,7 @@ a:hover{
   .template3{
     justify-content: center;
     text-align: center;
-    background-color: greenyellow;
+   background:linear-gradient(greenyellow, rgb(233, 124, 245));
     padding: 3%;
   }
   .template3>div{
@@ -371,6 +373,7 @@ a:hover{
     display: flex;
     padding: 10px;
     justify-content: space-around;
+    cursor: pointer;
     background-color: rgb(231, 229, 229);
    
   }
@@ -527,6 +530,12 @@ body{
   display: flex;
   flex-wrap: wrap;
 }
+.prodCont>div{
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+}
 
 
 
@@ -544,6 +553,11 @@ body{
     
       
      
+  }
+
+  .prodCont>div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .navBar2{
@@ -695,6 +709,46 @@ footer{
 
 
 
+  }
+
+  .prodCont{
+
+    display: grid;
+    grid-template-columns:repeat(3,1fr)
+  }
+  .prodCont>div{
+    margin: 20px;
+    text-align: center;
+    color: rgb(65, 64, 64);
+    font-weight: 800;
+    border: 3px solid whitesmoke;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px lightblue;
+  }
+  .prodCont>div>img{
+    width: 40%;
+    height: 40%;
+  }
+  .prodCont>div>button{
+    font-size: larger;
+    margin: 20px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+  .About{
+    margin: 20px;
+    font-size: 40px;
+  }
+  .About>li{
+    font-size: large;
+    color: rgb(21, 21, 21);
+    text-align: center;
+    margin: 50px;
   }
 
 

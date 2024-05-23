@@ -1,10 +1,40 @@
 const slider = document.querySelector('.slideShow');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
+let logo=document.getElementById("Logo");
+let women=document.getElementById("Women");
+let men=document.getElementById("Men");
+let MyAccountpage=document.getElementsByClassName("belowSection");
+let Aboutus=document.getElementById("ABOUTUS");
+
+
+// MyAccountpage.addEventListener('click', function(e){
+
+//   location.href="SignIn.html";
+// })
+
+women.addEventListener('click', function(e){
+
+  location.href=("ProductPage.html")
+  // this.style.backgroundColor="gray"
+})
+
+  men.addEventListener('click', function(e){
+
+    location.href=("ProductPage.html")
+    // this.style.backgroundColor="gray"
+  })
+
+
 
 let slidePosition = 0;
 const slides = document.querySelectorAll('.slide');
 const totalSlides = slides.length;
+
+logo.addEventListener('click', function(){
+
+  location.href=" index.html";
+})
 
 function updateSliderPosition() {
     slider.style.transform = `translateX(${-slidePosition * 25}%)`; // Translate based on slide width (25%)
@@ -52,3 +82,70 @@ document.addEventListener('click', function(event) {
     popupContent.style.display = 'none';
   }
 });
+
+// let shopNow=document.getElementById("ShopNow");
+// shopNow.addEventListener('click', function(e){
+//   location.href="ProductPage.html"
+// })
+
+let container = document.getElementById("prodContainer");
+
+let data = [];
+
+// get the data
+      fetch("https://fakestoreapi.com/products")
+        .then(function (res) {
+          return res.json();
+     })
+          .then(function (res) {
+           displayData(res);
+     });
+
+            function displayData(data) {
+              data.forEach(function (product) {
+                let div = document.createElement("div");
+                
+
+                let productImg = document.createElement("img");
+
+                productImg.src = product.image;
+
+                let title = document.createElement("p");
+
+                title.innerText = product.title;
+
+                let price = document.createElement("p");
+
+                price.innerText = "INR : " + product.price;
+                let addTocart=document.createElement("button");
+                let BuyButton=document.createElement("button");
+                addTocart.textContent="Add To Cart";
+                BuyButton.textContent="Buy Now";
+
+                div.append(productImg, title, price,addTocart, BuyButton);
+
+                container.append(div);
+              });
+            }
+
+            let shopNow=document.getElementById("ShopNow");
+            shopNow.addEventListener('click', function(e){
+              location.href="ProductPage.html"
+            })
+
+
+            Aboutus.addEventListener('click', function(e){
+
+              location.href="AboutUs.html"
+            })
+
+           
+            
+            
+
+         
+
+
+
+
+
